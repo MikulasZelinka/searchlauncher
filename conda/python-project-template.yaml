@@ -1,0 +1,4 @@
+name: python-project-template
+channels:
+  - defaults
+prefix: python-project-template

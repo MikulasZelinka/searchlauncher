@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "python-project-template"
+version = "0.1.0"
+description = "Python project template"
+authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+isort = "^5.10.1"
+pre-commit = "^2.17.0"
+pyproject-flake8 = "^0.0.1-alpha.2"
+pytest = "^7.0.0"
+mypy = "^0.931"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+include = '\.py$'
+exclude = ''
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = "E203"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+# disallow_untyped_defs = true
+# ignore_missing_imports = false
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
