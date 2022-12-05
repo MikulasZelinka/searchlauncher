@@ -1,18 +1,26 @@
 [tool.poetry]
-name = "python-project-template"
+name = "multisearch"
 version = "0.1.0"
-description = "Python project template"
+description = "Search multiple websites using a single shortcut."
 authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
+readme = "README.md"
+repository = "https://github.com/MikulasZelinka/multisearch"
+
+[tool.poetry.scripts]
+multisearch = 'multisearch.cli:main'
 
 [tool.poetry.dependencies]
 python = "^3.10"
+keyboard = "^0.13.5"
+typer = "^0.7.0"
+loguru = "^0.6.0"
 
-[tool.poetry.dev-dependencies]
-black = "^22.1.0"
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
 isort = "^5.10.1"
-pre-commit = "^2.17.0"
-pyproject-flake8 = "^0.0.1-alpha.2"
-pytest = "^7.0.0"
+pre-commit = "^2.20.0"
+pyproject-flake8 = "^0.0.1a5"
+pytest = "^7.2.0"
 mypy = "^0.931"
 
 [tool.black]
@@ -29,8 +37,17 @@ extend-ignore = "E203"
 profile = "black"
 
 [tool.mypy]
-# disallow_untyped_defs = true
-# ignore_missing_imports = false
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+
+[[tool.mypy.overrides]]
+module = [
+    "keyboard",
+]
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = [
