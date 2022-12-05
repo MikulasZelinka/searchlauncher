@@ -54,7 +54,7 @@ def show_popup() -> None:
 def start_gui() -> None:
     if platform.system() == "Windows":
         logger.debug("Fixing resolution scaling on Windows")
-        from ctypes import windll
+        from ctypes import windll  # type: ignore
 
         # Fix blurry font with resolution scaling on Windows:
         windll.shcore.SetProcessDpiAwareness(1)
