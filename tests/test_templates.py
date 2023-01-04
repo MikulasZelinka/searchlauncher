@@ -1,4 +1,4 @@
-from multisearch.search import TEMPLATES
+from searchlauncher.search import TEMPLATES
 
 
 def test_templates_have_query():

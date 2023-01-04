@@ -29,7 +29,7 @@ def start_search(query: StringVar, root: Tk) -> None:
 
 def show_popup() -> None:
     root = Tk()
-    root.title("Multisearch")
+    root.title("Search launcher")
 
     # center on screen
     root.eval("tk::PlaceWindow . center")

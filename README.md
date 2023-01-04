@@ -1,19 +1,19 @@
-# multisearch
+# searchlauncher
 
 Open a web search using your default browser with multiple search providers at once.
 
 ### Installation
 
-`pip install multisearch`
+`pip install searchlauncher`
 
-Once installed, restart your shell so that `multisearch` works.
+Once installed, restart your shell so that `searchlauncher` works.
 
 ### Running in background
 
 Run
 
 ```
-multisearch
+searchlauncher
 ```
 
 to start as a daemon waiting for a keypress (`CTRL + SHIFT + F`).
@@ -23,12 +23,12 @@ Then type your query and press `Enter` to submit or `Esc` to close the window.
 ### One-off search
 
 ```shell
-multisearch "an item I'm looking for"
+searchlauncher "an item I'm looking for"
 ```
 
 ### Supported websites
 
-For now, see the available [`TEMPLATES`](src/multisearch/search.py).
+For now, see the available [`TEMPLATES`](src/searchlauncher/search.py).
 
 ## TODO
 

@@ -2,7 +2,7 @@ from typing import Optional
 
 import typer
 
-from multisearch import open_in_browser, start_gui
+from searchlauncher import open_in_browser, start_gui
 
 
 def cli(query: Optional[str] = typer.Argument(None)) -> None:
