@@ -42,6 +42,10 @@ profile = "black"
 disallow_untyped_defs = true
 strict = true
 
+# this is specifically for "from ctypes import windll  # type: ignore"
+# open issue: https://github.com/python/mypy/issues/8823
+warn_unused_ignores = false
+
 [[tool.mypy.overrides]]
 module = "tests.*"
 disallow_untyped_defs = false
