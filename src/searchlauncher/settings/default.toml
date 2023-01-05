@@ -1,0 +1,39 @@
+# The top-level shortcut searches all sites
+shortcut = "ctrl+shift+s"
+
+[sites]
+amazon-com = "https://www.amazon.com/s?k=$query"
+amazon-de = "https://www.amazon.de/s?k=$query"
+aukro = "https://aukro.cz/vysledky-vyhledavani?text=$query"
+bazos = "https://www.bazos.cz/search.php?hledat=$query"
+ebay = "https://www.ebay.com/sch/i.html?_nkw=$query"
+fb-marketplace = "https://www.facebook.com/marketplace/search/?query=$query"
+google = "https://www.google.com/search?q=$query"
+heureka = "https://www.heureka.cz/?h%5Bfraze%5D=$query"
+idealo = "https://www.idealo.de/preisvergleich/MainSearchProductCategory.html?q=$query"
+sbazar = "https://www.sbazar.cz/hledej/$query"
+zbozi = "https://www.zbozi.cz/hledej/?q=$query&razeni=nejlevnejsi"
+
+
+[groups]
+
+# "all" is a sentinel value used for the default search of all sites,
+# do not modify or delete:
+[groups.all]
+
+[groups.cz]
+shortcut = "ctrl+shift+c"
+sites = ["aukro", "bazos", "heureka", "sbazar", "zbozi"]
+
+[groups.de]
+shortcut = "ctrl+shift+d"
+sites = ["amazon-de", "idealo"]
+
+[groups.en]
+shortcut = "ctrl+shift+e"
+sites = ["amazon-com", "ebay", "google"]
+
+[groups.custom]
+shortcut = "ctrl+shift+x"
+groups = ["cz", "de"]
+sites = ["ebay", "fb-marketplace"]
