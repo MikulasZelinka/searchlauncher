@@ -20,6 +20,17 @@ tests = ["attrs[tests-no-zope]", "zope.interface"]
 tests-no-zope = ["cloudpickle", "cloudpickle", "hypothesis", "hypothesis", "mypy (>=0.971,<0.990)", "mypy (>=0.971,<0.990)", "pympler", "pympler", "pytest (>=4.3.0)", "pytest (>=4.3.0)", "pytest-mypy-plugins", "pytest-mypy-plugins", "pytest-xdist[psutil]", "pytest-xdist[psutil]"]
 
 [[package]]
+name = "backports-strenum"
+version = "1.1.1"
+description = "Base class for creating enumerated constants that are also subclasses of str"
+category = "main"
+optional = false
+python-versions = ">=3.8, <4"
+files = [
+    {file = "backports.strenum-1.1.1.tar.gz", hash = "sha256:bc980eb0923a741f360af70fd97e122340e576945d354eb6745c5eb6f4d87554"},
+]
+
+[[package]]
 name = "black"
 version = "22.12.0"
 description = "The uncompromising code formatter."
@@ -3499,4 +3510,4 @@ dev = ["black (>=19.3b0)", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "093bc8fb3750ed9a4485f895091514f030e1946ea3fa3666981bda29ac888b0d"
+content-hash = "a5c58d31fd24e98fd6e9f8273bc7d1b71373dad32bbe6f7b240a8fee512bdcce"
