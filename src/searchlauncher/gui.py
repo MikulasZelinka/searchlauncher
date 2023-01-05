@@ -74,6 +74,9 @@ def start_gui() -> None:
         logger.info(f"Search {group_name} with '{group.shortcut}'")
         keyboard.add_hotkey(group.shortcut, show_launcher, args=(group_name,))
 
+    logger.info(f"Search all websites with '{settings.shortcut}'")
+    keyboard.add_hotkey(settings.shortcut, show_launcher, args=("all",))
+
     # wait() loops automatically:
     keyboard.wait()
 

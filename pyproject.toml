@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "searchlauncher"
-version = "0.1.0"
+version = "0.1.1"
 description = "Search multiple websites using a single shortcut."
 authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
 readme = "README.md"
