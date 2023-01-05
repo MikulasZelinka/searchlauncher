@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "searchlauncher"
-version = "0.1.1"
+version = "0.2.0"
 description = "Search multiple websites using a single shortcut."
 authors = ["Mikuláš Zelinka <mikulas@zelinka.dev>"]
 readme = "README.md"
@@ -10,7 +10,7 @@ repository = "https://github.com/MikulasZelinka/searchlauncher"
 searchlauncher = 'searchlauncher.cli:cli'
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 keyboard = "^0.13.5"
 typer = {extras = ["all"], version = "^0.7.0"}
 loguru = "^0.6.0"
