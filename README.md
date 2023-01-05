@@ -10,7 +10,9 @@ The search (launcher) can be triggered from anywhere as it's listening for a glo
 pip install searchlauncher
 ```
 
-Requires Python 3.11 [for now](#todo).
+#### Requirements
+
+Python `>=3.10` with [`tkinter`](https://docs.python.org/3/library/tkinter.html) installed.
 
 ### Running in background
 
@@ -67,7 +69,6 @@ You can also customise the default `shortcut` hotkey as well as shortcuts for al
     - [x] Customise search sites
     - [x] Customisable search groups
     - [ ] Add and select different browsers
-- [ ] Support Python versions older than just 3.11
 
 ## Development
 
