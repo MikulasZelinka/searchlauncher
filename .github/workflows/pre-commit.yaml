@@ -1,4 +1,4 @@
-name: Install and test
+name: Test
 
 on:
   push:
@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  install-and-test:
+  test:
 
     strategy:
       fail-fast: false
